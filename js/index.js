@@ -3,7 +3,7 @@
 const data = [
 	{
 		id: 1,
-		img: "../img/pinkanthurium.jpg",
+		img: "./img/pinkanthurium.jpg",
 		nameItem: "Pink Anthurium",
 		description:
 			"With pink heart-shaped flowers floating amongst bright exotic greenery a pink anthurium is an ideal way to show that your love travels the distance.",
@@ -13,7 +13,7 @@ const data = [
 	},
 	{
 		id: 2,
-		img: "../img/whiteorchid.jpg",
+		img: "./img/whiteorchid.jpg",
 		nameItem: "White Orchid",
 		description:
 			"The orchid is an elegant flower associated with young souls. This white orchid is the perfect gift for filling a loved one’s home with life. With some basic care, it will flower several times a year.",
@@ -23,7 +23,7 @@ const data = [
 	},
 	{
 		id: 3,
-		img: "../img/tigerorchid.jpg",
+		img: "./img/tigerorchid.jpg",
 		nameItem: "Tiger Orchid",
 		description:
 			"One of the most unique varieties of the phalaenopsis orchid around. Its cream petals with splashes and specks of pink are reminiscent of tiger skin, making this orchid really stand out.",
@@ -33,7 +33,7 @@ const data = [
 	},
 	{
 		id: 4,
-		img: "../img/liliesandroses.jpg",
+		img: "./img/liliesandroses.jpg",
 		nameItem: "Lilies and Roses",
 		description:
 			"A classic design that gives off simplicity and purity. Whatever the occasion, it will make its recipient’s day.",
@@ -43,7 +43,7 @@ const data = [
 	},
 	{
 		id: 5,
-		img: "../img/rosesandasters.jpg",
+		img: "./img/rosesandasters.jpg",
 		nameItem: "Roses and Asters",
 		description:
 			"Discover a gorgeous fresh bouquet where orange roses, along with purple asters and statice, evoke the special splendour of sunsets.",
@@ -53,7 +53,7 @@ const data = [
 	},
 	{
 		id: 6,
-		img: "../img/rosesandlilies.jpg",
+		img: "./img/rosesandlilies.jpg",
 		nameItem: "Roses and Lilies",
 		description:
 			"Pink is known to be the color of serenity, positive energy, inspiration and hope. A uniquely designed best-selling beauty that knows the true meaning of flower power.",
