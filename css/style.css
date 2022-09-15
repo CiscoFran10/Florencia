@@ -1,0 +1,425 @@
+:root {
+	--color-primary: #2e245e;
+	--color-secondary: #37268c;
+	--gray-100: #333333;
+	--gray-50: #828282;
+	--gray-0: #f5f5f5;
+
+	--title1: 28px;
+	--title2: 24px;
+	--title3: 20px;
+	--title4: 16px;
+	--headline: 16px;
+	--small: 12px;
+}
+
+h1,
+h2,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+span {
+	pointer-events: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	background-color: #fff;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0px;
+	padding: 10px 120px;
+	justify-content: space-between;
+	z-index: 2;
+	background-color: var(--color-primary);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	text-align: left;
+	font-size: 1.6rem;
+	font-family: "Cinzel";
+	color: #fff;
+}
+
+.menu {
+	display: flex;
+	gap: 15px;
+	position: relative;
+}
+
+.btn {
+	background: none;
+	border: none;
+	padding: 15px;
+	font-family: inherit;
+	font-size: var(--title4);
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+.btn:hover,
+.btn.active {
+	background-color: #fff;
+	color: var(--color-primary);
+}
+
+.cart-counter {
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.1rem;
+	position: absolute;
+	right: 5px;
+	font-family: "Cinzel";
+	top: 5px;
+}
+
+.hero {
+	text-align: center;
+	padding: 140px 0px;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(../img/herobg.jpg);
+	background-size: cover;
+}
+
+.hero-title {
+	font-size: 4.5rem;
+	font-family: "Cinzel";
+	color: #fff;
+}
+
+.form {
+	display: flex;
+	max-width: 360px;
+	margin: 100px auto -30px auto;
+	align-items: center;
+	gap: 40px;
+	position: relative;
+}
+
+.form input {
+	flex: 1;
+	background-color: #f7f7f7;
+	padding: 5px 20px;
+	width: 200px;
+	height: 40px;
+	border: none;
+	border-radius: 30px;
+}
+
+.form input:focus {
+	outline-width: 1px;
+	outline-color: var(--color-secondary);
+}
+
+.form input[type="text"] {
+	font-size: 1rem;
+	font-family: "Poppins";
+}
+
+.form .btn {
+	display: flex;
+	border-radius: 50%;
+	padding: 5px;
+	background-color: var(--color-primary);
+	color: #fff;
+	position: absolute;
+	right: 10px;
+}
+
+.form .btn span {
+	pointer-events: none;
+	width: 26px;
+}
+
+.grid {
+	max-width: 1200px;
+	margin: 80px auto;
+	display: grid;
+	gap: 60px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+	display: none;
+}
+
+.card {
+	max-width: 360px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 1px 1px 4px rgba(46, 36, 94, 0.2);
+	background-color: var(--gray-0);
+	position: relative;
+	animation: slide-in 0.6s ease forwards;
+}
+
+@keyframes slide-in {
+	from {
+		opacity: 0;
+		transform: translateY(-40px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.card:hover img {
+	transform: scale(1.09);
+}
+
+.card-img {
+	height: 280px;
+	transition: 0.3s;
+}
+
+.card-type {
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-size: var(--small);
+	background-color: var(--color-secondary);
+	color: #fff;
+	top: -5px;
+	margin: 5px 0px;
+	position: absolute;
+}
+
+.card-title {
+	font-size: var(--title2);
+	line-height: 1.4;
+	font-family: "Cinzel";
+	margin-top: 5px;
+	padding: 0px 15px;
+}
+
+.card-description {
+	font-size: 14px;
+	padding: 0px 15px;
+	line-height: 1.4;
+	flex: 1;
+	color: var(--color-primary);
+}
+
+.card-price {
+	display: block;
+	font-size: var(--title2);
+	color: var(--color-primary);
+	font-family: "Cinzel";
+	font-weight: 600;
+	margin-bottom: 10px;
+	padding: 0px 15px;
+}
+.card-btn {
+	padding: 10px;
+	background: none;
+	border-radius: 4px;
+	font-size: var(--title4);
+	border: 2px solid var(--color-secondary);
+	color: #fff;
+	cursor: pointer;
+	font-family: inherit;
+	background-color: var(--color-primary);
+	transition: 0.3s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+	background-color: transparent;
+
+	color: var(--color-primary);
+}
+
+.side-menu {
+	opacity: 0;
+	border-radius: 5px;
+	overflow: hidden;
+	position: fixed;
+	visibility: hidden;
+	top: 0px;
+	transition: 0.3s ease;
+	right: 0px;
+	width: 420px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin: 40px auto;
+	background-color: #f7f7f7;
+	animation: slide 1s ease forwards;
+}
+
+.side-menu.ativo {
+	visibility: visible;
+	opacity: 1;
+	top: 35px;
+}
+
+.cart {
+	display: flex;
+	border-radius: 10px;
+	flex-direction: column;
+	background-color: var(--gray-0);
+}
+
+.cart .title {
+	font-family: "Cinzel";
+	color: #fff;
+	padding: 30px 0px;
+	text-align: center;
+	font-weight: 400;
+	background-color: var(--color-primary);
+}
+
+.cart-list {
+	overflow-y: auto;
+	height: 380px;
+}
+
+.cart-list::-webkit-scrollbar {
+	width: 16px;
+}
+
+.cart-list::-webkit-scrollbar-thumb {
+	background-color: var(--color-primary);
+}
+
+.cart-item {
+	display: flex;
+	margin: 15px 10px;
+	align-items: center;
+	padding: 10px;
+	gap: 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	animation: fade-in 0.4s ease forwards;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: scale(0.3);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.cart-item .btn {
+	color: var(--color-primary);
+}
+.cart-item .btn:hover {
+	background-color: var(--color-primary);
+	color: #fff;
+}
+
+.cart-item img {
+	border-radius: 10px;
+	max-width: 60px;
+}
+
+.cart-title {
+	font-size: 1rem;
+	font-weight: 400;
+	flex: 1;
+	color: var(--color-secondary);
+}
+
+.cart-total .flex {
+	display: flex;
+	padding: 25px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--gray-100);
+}
+
+.cart-total h2 {
+	font-family: "Cinzel";
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+.cart-total span {
+	display: block;
+	color: #f5f5f5;
+	font-size: 1.2rem;
+}
+
+.add-modal {
+	display: none;
+}
+
+.add-modal.ativo {
+	display: block;
+	text-align: center;
+	background-color: var(--gray-0);
+	padding: 25px;
+	bottom: 20px;
+	right: 25px;
+	position: fixed;
+	border-radius: 5px;
+	border: 2px solid var(--color-secondary);
+	animation: slide-in 0.6s ease forwards;
+}
+
+.add-modal.ativo::before {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	left: 65%;
+	margin-left: -15px;
+	border: 15px solid;
+	border-color: var(--color-primary) transparent transparent transparent;
+}
+
+.modal-title {
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: var(--color-primary);
+}
+
+.empty {
+	text-align: center;
+	margin: 120px auto;
+	font-family: "Cinzel";
+	font-size: 1.3rem;
+	color: var(--color-primary);
+}
+
+.not-found {
+	display: none;
+	font-family: "Cinzel";
+	color: var(--color-primary);
+	margin: 200px 0px;
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}

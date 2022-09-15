@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/index.js" defer></script>
+  <title>Florencia</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">Fl❃rencia</h1>
+    <nav class="nav">
+      <ul class="menu">
+        <li><button class="btn" id="all">Todos</button></li>
+        <li><button class="btn" id="flores">Flores</button></li>
+        <li><button class="btn" id="plantas">Plantas</button></li>
+        <li><button id="cart-btn" class="btn"><span class="material-symbols-outlined">
+              shopping_bag
+            </span></button>
+          <span class="cart-counter">0</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1 class="hero-title">Fl❃rencia </h1>
+    </div>
+    <form class="form" role="search">
+      <input type="text" id="search-input" placeholder="Digite aqui a sua pesquisa">
+      <button class="btn" id="search-btn"><span class="material-symbols-outlined">
+          search
+        </span></button>
+    </form>
+    <h1 class="not-found">Produto não encontrado</h1>
+    <div class="grid">
+    </div>
+  </main>
+
+  <aside class="side-menu" id="side-menu">
+
+    <div class="cart">
+      <h1 class="title">Carrinho de compras</h1>
+      <ul class="cart-list">
+        <li>
+          <div class="empty">
+            <h2>Carrinho vazio</h2>
+            <span>Adicione itens</span>
+          </div>
+        </li>
+      </ul>
+      <div class="cart-total">
+        <div class="flex">
+          <h2>Quantidade:</h2>
+          <span id="qt-value">0</span>
+        </div>
+        <div class="flex">
+          <h2>Total:</h2>
+          <span id="price-value">R$ 0</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="add-modal">
+    <span class="progress-bar"></span>
+    <h1 class="modal-title">
+      Produto adicionado ao carrinho 🏶
+    </h1>
+  </div>
+
+</body>
+
+</html>
